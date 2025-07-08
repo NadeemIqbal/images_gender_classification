@@ -27,8 +27,7 @@ pip install deepface tqdm
 3. Processed images will be copied to `men/` or `women/` folders based on the detected gender. All images not detected as 'Woman' are classified as 'Man'.
 
 ## Notes
-- The script will skip images already present in the output folders.
-- No images or output folders are tracked by git (see `.gitignore`).
+- The script will skip images already present in the output folders (men or women)
 - Images with no detectable face are classified as 'Man'.
 
 ## Attribution
