@@ -1,0 +1,8 @@
+images/
+men/
+women/
+unknown/
+__pycache__/
+*.pyc
+.DS_Store
+.env 
