@@ -1,6 +1,6 @@
 # Gender Detection from Images
 
-This project uses DeepFace to detect gender from images and sorts them into separate folders: `men`, `women`, and `unknown`.
+This project uses DeepFace to detect gender from images and sorts them into separate folders: `men` and `women`.
 
 ## Features
 - Batch processing of images for gender detection
@@ -24,12 +24,12 @@ pip install deepface tqdm
    ```bash
    python gender_detection.py
    ```
-3. Processed images will be copied to `men/`, `women/`, or `unknown/` folders based on the detected gender.
+3. Processed images will be copied to `men/` or `women/` folders based on the detected gender. All images not detected as 'Woman' are classified as 'Man'.
 
 ## Notes
 - The script will skip images already present in the output folders.
 - No images or output folders are tracked by git (see `.gitignore`).
-- No sensitive or personal data is included in this repository.
+- Images with no detectable face are classified as 'Man'.
 
 ## Attribution
 Any use of this code or its substantial portions must credit Nadeem Iqbal ([GitHub NadeemIqbal](https://github.com/NadeemIqbal)).
